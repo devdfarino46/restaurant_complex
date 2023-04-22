@@ -1,0 +1,29 @@
+@import 'fonts/circe';
+@import 'base/reset';
+@import 'base/colors';
+
+* {
+    font-family: 'Circe';
+    line-height: 1.4;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $primary1Color;
+}
+
+.container {
+    width: 1296px;
+    margin: 0 auto;
+}
+
+
+.logo {
+    width: 80px;
+}
+
+
+@import 'components/left-bar';
+@import 'components/nav';
+@import 'components/header';
+@import 'components/content';
+@import 'components/footer';

@@ -1,0 +1,160 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/main.css")
+        link(rel="stylesheet", href="css/pages/home.css")
+        title Restourant Complex
+    body 
+        .left-bar 
+            section.left-bar__section
+                a.left-bar__logo-link(href="#") 
+                    img.left-bar__logo.logo(src="img/logos/logo.svg", alt="Logo")
+                button.left-bar__open_menu-btn
+                    img.left-bar__open_menu-icon(src="img/icons/open-menu.svg", alt="Menu") 
+            section.left-bar__section
+                a.left-bar__contact-link(href="#") 
+                    img.left-bar__contact-icon.contact-icon(src="img/icons/youtube.svg", alt="Youtube")
+                a.left-bar__contact-link(href="#") 
+                    img.left-bar__contact-icon.contact-icon(src="img/icons/vk.svg", alt="VK")
+                a.left-bar__contact-link(href="#") 
+                    img.left-bar__contact-icon.contact-icon(src="img/icons/telegram.svg", alt="Telegram")
+
+        header.header
+            nav.nav
+                ul.nav__items-wrapper 
+                    li.nav__item
+                        a.nav__item-link(href="#") Меню
+                    li.nav__item
+                        a.nav__item-link(href="#") Доставка
+                    li.nav__item
+                        a.nav__item-link(href="#") Оплата
+                    li.nav__item
+                        a.nav__main_item-link.nav__item-link(href="#") Бронь столика
+
+            h1.header__title
+                | Видовой ресторан Food Exxe Relo#[br]
+                | на Крестовском острове
+                        
+        main.content 
+            .content__container.container 
+                section.content__section
+                    h1.content__section-title о ресторане
+                    .content__section-wrapper 
+                        h2.content__section__subtitle Food#[br]Exxe#[br]Relo
+                        .content__section__descr-wripper
+                            p.content__section-sescr
+                                | Sed vel ornare ut rhoncus, ac ut nibh. Amet at sit et nibh. 
+                                | In lectus phasellus non ornare eget velit. Facilisi urna, tristique dui, rhoncus, dolor. 
+                                | Tincidunt enim gravida dignissim leo pulvinar sit volutpat nulla vestibulum.#[br]
+                                br
+                                | Morbi pellentesque enim massa laoreet vel id. Lectus ac, facilisis neque turpis. 
+                                | Morbi massa enim nullam sem vehicula. 
+                                |Amet quis pellentesque enim porttitor lectus interdum. 
+                                | Nisi, faucibus pharetra at porttitor. Fringilla luctus pretium in viverra. 
+                                | In adipiscing tempor amet malesuada ullamcorper ut sagittis. 
+                                | Dui, scelerisque vulputate risus massa dictum. 
+                                | Cras at quis in eu, faucibus feugiat vel. At.
+
+                section.content__section
+                    h1.content__section-title меню
+                    .content__section-wrapper 
+                        h2.content__section__subtitle Меню
+                        .content__section__descr-wripper
+                            p.content__section-sescr
+                                | At faucibus nullam mauris vitae ut non. 
+                                | Augue libero non nibh nec, et eget erat. 
+                                | Nascetur nunc neque, varius massa aliquam interdum turpis massa. 
+                                | Ac tortor aliquam risus, interdum nisl mauris sit. 
+                                | Ut placerat fermentum pellentesque ac at. Vitae venenatis faucibus urna mi 
+                                | eget vitae quam eu. Euismod sed mauris id turpis iaculis. 
+                                | Erat rutrum dolor, vitae morbi.#[br]
+                                br
+                                | Nunc cras cras aliquet blandit faucibus massa sagittis semper. 
+                    .content__subsections-wrapper.content__section-wrapper
+                        .content__subsection
+                            .content__subsection-picture-wrapper 
+                                .content__subsection-picture(style="background-image: url(img/pictures/main-menu.jpg);")
+                            h1.content__subsection-title.content__section-title Основное меню
+                        .content__subsection
+                            .content__subsection-picture-wrapper 
+                                .content__subsection-picture(style="background-image: url(img/pictures/bar-list.jpg);")
+                            h1.content__subsection-title.content__section-title Барная карта
+
+                section.content__section
+                    h1.content__section-title доставка
+                    .content__section-wrapper 
+                        h2.content__section__subtitle Служба#[br]доставки
+                        .content__section__descr-wripper
+                            p.content__section-sescr
+                                | Phasellus diam, ultrices lobortis integer et. 
+                                | Diam, purus vel sagittis, non, a. In risus, venenatis enim vitae mauris 
+                                | aliquet orci. Consectetur nibh interdum nullam ut lobortis eu etiam sem. 
+                                | Et in vitae pellentesque non, lectus orci natoque faucibus suspendisse. 
+                                | Semper aliquam id et ultrices velit donec lacus. In odio sit nibh volutpat cras 
+                                | placerat sit feugiat dignissim. Rutrum et suspendisse tortor, lobortis eleifend in fringilla. 
+                                | Egestas cursus imperdiet cursus dui, nulla id massa.
+                                | Hendrerit nam enim semper porttitor imperdiet diam semper.
+                                | Nulla sit etiam cras morbi enim elementum euismod sapien.
+                            .content__delivery-btns-wrapper
+                                a.content__delivery-main_btn.content__delivery-btn(href="#") Подробнее
+                                a.content__delivery-btn(href="#") Условия доставки
+
+                section.content__section
+                    h1.content__section-title контакты
+                    .content__contacts-wrapper 
+                        .content__map-picture(style="background-image: url('../img/pictures/map.png');")
+                        .content__delivery_times-wrapper 
+                            .content__delivery_time-item
+                                p.content__delivery_time
+                                    span.content__delivery_time-number 2
+                                    span.content__delivery_time-unit мин
+                                p.content__delivery_time-from_city из центра#[br]Санкт-Петербурга
+                            .content__delivery_time-item
+                                p.content__delivery_time
+                                    span.content__delivery_time-number 12
+                                    span.content__delivery_time-unit мин
+                                p.content__delivery_time-from_city из города#[br]Зеленогорск
+                            .content__delivery_time-item
+                                p.content__delivery_time
+                                    span.content__delivery_time-number 42
+                                    span.content__delivery_time-unit мин
+                                p.content__delivery_time-from_city из аэропорта#[br]Пулково
+                            .content__delivery_time-item
+                                p.content__delivery_time
+                                    span.content__delivery_time-number 52
+                                    span.content__delivery_time-unit мин
+                                p.content__delivery_time-from_city из города#[br]Павловск
+                            
+                        .content__contacts-field
+                            section.content__contacts-subsection
+                                p.content__contacts-info
+                                    img.content__contacts-info-icon(src="img/icons/location.svg", alt="Location")
+                                    span.content__contacts-info-text Санкт-Петербург, Северная дорога, 11 
+                                p.content__contacts-info
+                                    img.content__contacts-info-icon(src="img/icons/phone.svg", alt="Phone")
+                                    span.content__contacts-info-text +7 (921) 777-77-77
+                            
+                            section.content__contacts-subsection
+                                h2.content__contacts-opening_hours-title.content__contacts-opening_hours Время работы
+                                p.content__contacts-opening_hours
+                                    span.content__contacts-opening_hours-days Вск-Чт
+                                    span.content__contacts-opening_hours-hours с 12:00 до 23:00
+                                p.content__contacts-opening_hours
+                                    span.content__contacts-opening_hours-days Пт-Сб
+                                    span.content__contacts-opening_hours-hours с 12:00 до 03:00
+
+                            section.content__contacts-btns-section.content__contacts-subsection
+                                a.content__contacts-main_btn.content__contacts-btn(href="#") Бронь столика
+                                a.content__contacts-btn(href="#") Задать вопрос
+
+
+
+        footer.footer
+            .footer__container.container 
+                a.footer__link(href="#") 
+                    img.footer__logo(src="img/logos/logo.svg", alt="Food Logo")
+                a.footer__link(href="#") Политика конфиденциальности
+                a.footer__link(href="#") Дизайн d-e-n.ru

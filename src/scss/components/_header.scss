@@ -1,0 +1,28 @@
+.header {
+    z-index: 0;
+    position: relative;
+    height: 100vh;
+    background-image: url('../img/backgrounds/restourant-preview.jpg');
+
+    display: flex;
+    flex-direction: column;
+}
+
+.header::before {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: $primary1Color;
+    opacity: 0.4;
+}
+
+.header__title {
+    margin-left: 422px;
+    margin-bottom: 150px;
+    margin-top: auto;
+
+    color: white;
+    font-size: 54px;
+    font-weight: bold;
+}
