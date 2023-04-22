@@ -38,8 +38,7 @@ function styles() {
 function templates() {
     return src([
         "src/index.jade",
-        "src/templates/*.jade",
-        "src/pages/*.jade"
+        "src/pages/**/*.jade"
     ])
         .pipe(jade({
             
