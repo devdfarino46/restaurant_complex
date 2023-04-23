@@ -92,53 +92,7 @@ html(lang="ru")
                                 a.content__delivery-main_btn.content__delivery-btn(href="#") Подробнее
                                 a.content__delivery-btn(href="#") Условия доставки
 
-                section.content__section
-                    h1.content__section-title контакты
-                    .content__contacts-wrapper 
-                        .content__map-picture(style="background-image: url('../img/pictures/map.png');")
-                        .content__delivery_times-wrapper 
-                            .content__delivery_time-item
-                                p.content__delivery_time
-                                    span.content__delivery_time-number 2
-                                    span.content__delivery_time-unit мин
-                                p.content__delivery_time-from_city из центра#[br]Санкт-Петербурга
-                            .content__delivery_time-item
-                                p.content__delivery_time
-                                    span.content__delivery_time-number 12
-                                    span.content__delivery_time-unit мин
-                                p.content__delivery_time-from_city из города#[br]Зеленогорск
-                            .content__delivery_time-item
-                                p.content__delivery_time
-                                    span.content__delivery_time-number 42
-                                    span.content__delivery_time-unit мин
-                                p.content__delivery_time-from_city из аэропорта#[br]Пулково
-                            .content__delivery_time-item
-                                p.content__delivery_time
-                                    span.content__delivery_time-number 52
-                                    span.content__delivery_time-unit мин
-                                p.content__delivery_time-from_city из города#[br]Павловск
-                            
-                        .content__contacts-field
-                            section.content__contacts-subsection
-                                p.content__contacts-info
-                                    img.content__contacts-info-icon(src="img/icons/location.svg", alt="Location")
-                                    span.content__contacts-info-text Санкт-Петербург, Северная дорога, 11 
-                                p.content__contacts-info
-                                    img.content__contacts-info-icon(src="img/icons/phone.svg", alt="Phone")
-                                    span.content__contacts-info-text +7 (921) 777-77-77
-                            
-                            section.content__contacts-subsection
-                                h2.content__contacts-opening_hours-title.content__contacts-opening_hours Время работы
-                                p.content__contacts-opening_hours
-                                    span.content__contacts-opening_hours-days Вск-Чт
-                                    span.content__contacts-opening_hours-hours с 12:00 до 23:00
-                                p.content__contacts-opening_hours
-                                    span.content__contacts-opening_hours-days Пт-Сб
-                                    span.content__contacts-opening_hours-hours с 12:00 до 03:00
-
-                            section.content__contacts-btns-subsection.content__contacts-subsection
-                                button.content__contacts-main_btn.content__contacts-btn.booking_table-btn Бронь столика
-                                a.content__contacts-btn(href="#") Задать вопрос
+                include templates/contacts-section.jade
 
 
 

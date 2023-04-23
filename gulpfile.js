@@ -36,10 +36,7 @@ function styles() {
 }
 
 function templates() {
-    return src([
-        "src/index.jade",
-        "src/pages/**/*.jade"
-    ])
+    return src("src/*.jade")
         .pipe(jade({
             
         }))
