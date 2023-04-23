@@ -1,6 +1,9 @@
 .footer {
     background-color: $primary1Color;
     height: 120px;
+
+    display: flex;
+    justify-content: center;
 }
 
 .footer__container {

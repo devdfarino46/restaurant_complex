@@ -1,0 +1,15 @@
+.booking_table
+    .booking_table__popup
+        button.booking_table__close-btn
+            img.booking_table__close-icon(src="img/icons/close.svg", alt="Close")
+        a.booking_table__logo-link.logo-link
+            img.booking_table__logo.logo(src="img/logos/logo.svg", alt="Food logo")
+        form.booking_table__form(action="#", method="post") 
+            h1.booking_table__title Забронировать столик
+            .booking_table__inputs-wrapper 
+                input.booking_table__input(type="text" placeholder="Имя")
+                input.booking_table__input(type="text" placeholder="Телефон")
+                .booking_table__inputs-inline-wrapper
+                    input.booking_table__input.booking_table__input-inline(type="text" placeholder="Гостей")
+                    input.booking_table__input.booking_table__input-inline(type="text" placeholder="Время")
+            button.booking_table__submit-btn(type="submit") Забронировать

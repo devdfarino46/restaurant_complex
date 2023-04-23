@@ -5,22 +5,12 @@ html(lang="ru")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="css/main.css")
-        link(rel="stylesheet", href="css/pages/home.css")
+        link(rel="shortcut icon", href="img/logos/logo.svg", type="image/x-icon")
         title Restourant Complex
     body 
-        .left-bar 
-            section.left-bar__section
-                a.left-bar__logo-link(href="#") 
-                    img.left-bar__logo.logo(src="img/logos/logo.svg", alt="Logo")
-                button.left-bar__open_menu-btn
-                    img.left-bar__open_menu-icon(src="img/icons/open-menu.svg", alt="Menu") 
-            section.left-bar__section
-                a.left-bar__contact-link(href="#") 
-                    img.left-bar__contact-icon.contact-icon(src="img/icons/youtube.svg", alt="Youtube")
-                a.left-bar__contact-link(href="#") 
-                    img.left-bar__contact-icon.contact-icon(src="img/icons/vk.svg", alt="VK")
-                a.left-bar__contact-link(href="#") 
-                    img.left-bar__contact-icon.contact-icon(src="img/icons/telegram.svg", alt="Telegram")
+        include templates/left-bar.jade
+        include templates/menu.jade
+        include templates/booking_table.jade
 
         header.header
             nav.nav
@@ -31,8 +21,8 @@ html(lang="ru")
                         a.nav__item-link(href="#") Доставка
                     li.nav__item
                         a.nav__item-link(href="#") Оплата
-                    li.nav__item
-                        a.nav__main_item-link.nav__item-link(href="#") Бронь столика
+                    li.nav__bookink_table-item.nav__item
+                        button.nav__item-link.booking_table-btn Бронь столика
 
             h1.header__title
                 | Видовой ресторан Food Exxe Relo#[br]
@@ -146,15 +136,12 @@ html(lang="ru")
                                     span.content__contacts-opening_hours-days Пт-Сб
                                     span.content__contacts-opening_hours-hours с 12:00 до 03:00
 
-                            section.content__contacts-btns-section.content__contacts-subsection
-                                a.content__contacts-main_btn.content__contacts-btn(href="#") Бронь столика
+                            section.content__contacts-btns-subsection.content__contacts-subsection
+                                button.content__contacts-main_btn.content__contacts-btn.booking_table-btn Бронь столика
                                 a.content__contacts-btn(href="#") Задать вопрос
 
 
 
-        footer.footer
-            .footer__container.container 
-                a.footer__link(href="#") 
-                    img.footer__logo(src="img/logos/logo.svg", alt="Food Logo")
-                a.footer__link(href="#") Политика конфиденциальности
-                a.footer__link(href="#") Дизайн d-e-n.ru
+        include templates/footer.jade
+
+        script(src="js/main.js") 

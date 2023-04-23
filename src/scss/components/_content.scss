@@ -1,3 +1,8 @@
+.content {
+    display: flex;
+    justify-content: center;
+}
+
 .content__container {
     padding-top: 150px;
     padding-bottom: 100px;
@@ -5,8 +10,12 @@
 
 .content__section {
     margin-bottom: 150px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
-.content__section:last-child { margin-bottom: 0; }
+
 
 .content__section-title {
     display: flex;
@@ -91,8 +100,11 @@
     border: 1px solid change-color($color: $primary1Color, $alpha: 0.2);
     font-weight: bold;
     font-size: 20px;
+
+    &:last-child {
+        margin-right: 0;
+    }
 }
-.content__delivery-btn:last-child { margin-right: 0; }
 
 .content__delivery-main_btn {
     border: none;
@@ -157,8 +169,11 @@
 
 .content__contacts-subsection {
     margin-bottom: 25px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
-.content__contacts-subsection:last-child { margin-bottom: 0; }
 
 .content__contacts-info {
     color: white;
@@ -166,8 +181,11 @@
     margin-bottom: 20px;
     display: flex;
     align-items: center;
+
+    :last-child {
+        margin-bottom: 0;
+    }
 }
-.content__contacts-info:last-child { margin-bottom: 0; }
 
 .content__contacts-info-icon {
     height: 20px;
@@ -178,8 +196,11 @@
     color: white;
     margin-bottom: 15px;
     font-size: 18px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
-.content__contacts-opening_hours:last-child { margin-bottom: 0; }
 
 .content__contacts-opening_hours-title {
     font-size: 20px;
@@ -197,8 +218,12 @@
     padding: 9px 19px;
     border: 1px solid white;
     margin-right: 20px;
+
+    &:last-child {
+        margin-right: 0;
+    
+    }
 }
-.content__contacts-btn:last-child { margin-right: 0; }
 
 .content__contacts-main_btn {
     padding: 10px 20px;

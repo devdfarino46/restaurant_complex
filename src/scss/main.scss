@@ -11,14 +11,33 @@
     color: $primary1Color;
 }
 
+.body--noscrolling {
+    overflow: hidden;
+}
+
 .container {
     width: 1296px;
-    margin: 0 auto;
 }
 
 
+.logo-link {
+    display: inline-block;
+}
+
 .logo {
     width: 80px;
+}
+
+.contact-icon {
+    width: 40px;
+}
+
+.booking_table-btn {
+    background-color: $primary2Color;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 
@@ -27,3 +46,10 @@
 @import 'components/header';
 @import 'components/content';
 @import 'components/footer';
+@import 'components/menu';
+@import 'components/booking_table';
+
+@import 'media-queries/laptop-1600';
+@import 'media-queries/laptop-1280';
+@import 'media-queries/tablet';
+@import 'media-queries/smartphone';

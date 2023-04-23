@@ -1,0 +1,93 @@
+.booking_table {
+    z-index: 1;
+    display: none;
+    position: fixed;
+    top: 0; bottom: 0; left: 0; right: 0;
+    background-color: change-color($color: $primary1Color, $alpha: 0.4);
+
+    align-items: center;
+    justify-content: center;
+
+    &--visibled {
+        display: flex;
+    }
+}
+
+.booking_table__popup {
+    position: relative;
+    background-color: $primary1Color;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px change-color($color: black, $alpha: 0.7);
+}
+
+.booking_table__close-btn {
+    position: absolute;
+    top: 20px; right: 20px;
+    cursor: pointer;
+}
+
+.booking_table__close-icon {
+    width: 40px;
+}
+
+.booking_table__logo-link {
+    margin-bottom: 40px;
+}
+
+.booking_table__form {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.booking_table__title {
+    color: white;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.booking_table__inputs-wrapper {
+    width: 296px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-bottom: 40px;
+}
+
+.booking_table__input {
+    background: none;
+    border: 1px solid change-color($color: white, $alpha: 0.3);
+    outline: none;
+    font-size: 16px;
+    padding: 15px 20px; 
+    color: white;
+    min-width: 0px;
+
+    &::placeholder {
+        color: white;
+    }
+}
+
+.booking_table__inputs-inline-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+}
+
+.booking_table__input-inline {
+}
+
+.booking_table__submit-btn {
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: $primary2Color;
+    cursor: pointer;
+}
